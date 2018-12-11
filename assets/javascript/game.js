@@ -11,10 +11,10 @@ console.log(randomWord);
 
 //Array showing the guessed word
 
-var guessedWord = ["_","_","_","_"];
-var guessedWordInput = document.getElementById("guessWord");
-guessedWordInput.textContent = guessedWord;
-    
+var guessedWord = ["_" , "_" , "_" , "_"];
+
+
+
 
 //On key event function
 
@@ -27,14 +27,20 @@ document.onkeyup = function (event) {
     
   var n = randomWord.includes(key);
   console.log(n);
+
+  document.getElementById("guessWord").innerHTML = guessedWord;
+  
+    
+
 };
 
+//Wins
 
-            //    if(key==randomWord[ i
-            //     //    "letter of the word"
-            //      ] ){
 
-            //     //  1) incrase Score
-            //     //  2) show letter
-            //    };
+//Number of Guesses Remaining
+
+
+
+
+//Letters Already Guessed
               
