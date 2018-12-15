@@ -10,6 +10,7 @@ var NordArray=CurrentWord.split("");
 var output=" ";
 
 console.log(CurrentWord);
+console.log(NordArray);
 
 //   NordArray.forEach({
     
@@ -24,7 +25,7 @@ console.log(output);
 output="";
 
 
-document.getElementById("GsRemaining").textContent = GuessRemainings;
+
       };
 
 window.onload = function(){
@@ -41,10 +42,24 @@ document.onkeyup = function () {
   keyPressText.textContent = key;
     
   
-  console.log(n);
-}
+  console.log(keyPressText);
+
  
   
-    
+    for (var c = 0; c < CurrentWord.length; c++){
 
+        if(keyPressText==NordArray[c]){
 
+          display[c]=keyPressText;
+          GuessRemainings--;
+         
+        }
+         output= output+display[c]+ "";
+    }
+    console.log(display);
+    console.log(keyPressText);
+    console.log(NordArray[c]);
+    console.log(GuessRemainings);
+    document.getElementById("GsRemaining").textContent = GuessRemainings;
+  }
+console.log(output)
