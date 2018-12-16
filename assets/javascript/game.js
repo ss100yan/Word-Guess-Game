@@ -9,6 +9,7 @@ var display=[myLength];
 var NordArray=CurrentWord.split("");
 var output=" ";
 var LettersAlreadyGuessed = [];
+
 console.log(CurrentWord);
 console.log(NordArray);
 
@@ -35,7 +36,7 @@ window.onload = function(){
 //On key event function
 
 document.onkeyup = function () {
-   
+  
     var key = event.key;
     
   var keyPressText = document.getElementById("keypress");
@@ -63,7 +64,7 @@ document.onkeyup = function () {
     }
     document.getElementById("game").textContent= output;
     output="";
-    
+
     console.log(LettersAlreadyGuessed);
     console.log(NordArray);
     console.log(display);
@@ -73,4 +74,5 @@ document.onkeyup = function () {
     document.getElementById("GsRemaining").textContent = GuessRemainings;
     document.getElementById("LettersAlreadyGuessed").textContent = LettersAlreadyGuessed;
   }
+
 console.log(output)
