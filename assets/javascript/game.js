@@ -54,10 +54,16 @@ document.onkeyup = function () {
           
           LettersAlreadyGuessed.push(NordArray[c]);
           console.log(LettersAlreadyGuessed);
-          output= output+display[c] + "";
+          
+          
+
         }
-         
+        output= output + display[c] + " "; 
+        console.log(output);
     }
+    document.getElementById("game").textContent= output;
+    output="";
+    
     console.log(LettersAlreadyGuessed);
     console.log(NordArray);
     console.log(display);
