@@ -8,7 +8,7 @@ var myLength=CurrentWord.length;
 var display=[myLength];
 var NordArray=CurrentWord.split("");
 var output=" ";
-
+var LettersAlreadyGuessed = [];
 console.log(CurrentWord);
 console.log(NordArray);
 
@@ -44,22 +44,27 @@ document.onkeyup = function () {
   
   console.log(keyPressText);
 
- 
+     GuessRemainings--;
   
     for (var c = 0; c < CurrentWord.length; c++){
 
-        if(keyPressText==NordArray[c]){
-
-          display[c]=keyPressText;
-          GuessRemainings--;
-         
+        if(key==NordArray[c]){
+ 
+          display[c]=key;
+          
+          LettersAlreadyGuessed.push(NordArray[c]);
+          console.log(LettersAlreadyGuessed);
+          output= output+display[c] + "";
         }
-         output= output+display[c]+ "";
+         
     }
+    console.log(LettersAlreadyGuessed);
+    console.log(NordArray);
     console.log(display);
-    console.log(keyPressText);
+    console.log(key); 
     console.log(NordArray[c]);
     console.log(GuessRemainings);
     document.getElementById("GsRemaining").textContent = GuessRemainings;
+    document.getElementById("LettersAlreadyGuessed").textContent = LettersAlreadyGuessed;
   }
 console.log(output)
