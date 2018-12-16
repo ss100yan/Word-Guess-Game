@@ -8,3 +8,15 @@ body {
 h2{
     color: red
 }
+#game{
+    color: red;
+}
+#keypress{
+    color: red;
+}
+#GsRemaining{
+    color: red;
+}
+#LettersAlreadyGuessed{
+    color: red;
+}
