@@ -9,6 +9,7 @@ var display=[myLength];
 var NordArray=CurrentWord.split("");
 var output=" ";
 var LettersAlreadyGuessed = [];
+var wins = 0;
 
 console.log(CurrentWord);
 console.log(NordArray);
@@ -25,8 +26,8 @@ document.getElementById("game").textContent= output;
 console.log(output);
 output="";
 
-
-
+document.getElementById("score").textContent= wins;
+document.getElementById("GsRemaining").textContent= GuessRemainings;
       };
 
 window.onload = function(){
