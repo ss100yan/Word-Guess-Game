@@ -1,8 +1,11 @@
 body {
-    /* background-color: black; */
+    
     text-align: center;
     color:white;
     background-image:url(WordGuess.jpg);
+}
+#box{
+    background-color: black;
 }
 
 h2{
