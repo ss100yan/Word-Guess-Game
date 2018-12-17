@@ -26,3 +26,7 @@ h2{
 #score{
     color: red;
 }
+#topic{
+   color:blue;
+   font-style: italic;
+   }
