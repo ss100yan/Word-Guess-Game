@@ -11,10 +11,7 @@ var output=" ";
 var LettersAlreadyGuessed = [];
 var wins = 0;
 var win = myLength;
-console.log(CurrentWord);
-console.log(NordArray);
 
-//   NordArray.forEach({
     
 var setup = function(){
 
@@ -23,7 +20,7 @@ display[i] = "_ ";
 output = output + display[i];
      }
 document.getElementById("game").textContent= output;
-console.log(output);
+
 output="";
 
 document.getElementById("score").textContent= wins;
@@ -44,8 +41,7 @@ document.onkeyup = function () {
   keyPressText.textContent = key;
     
   
-  console.log(keyPressText);
-
+  
      GuessRemainings--;
   
     for (var c = 0; c < CurrentWord.length; c++){
@@ -66,20 +62,17 @@ document.onkeyup = function () {
     document.getElementById("game").textContent= output;
     output="";
 
-    console.log(LettersAlreadyGuessed);
-    console.log(NordArray);
-    console.log(display);
-    console.log(key); 
-    console.log(NordArray[c]);
-    console.log(GuessRemainings);
     document.getElementById("GsRemaining").textContent = GuessRemainings;
     document.getElementById("LettersAlreadyGuessed").textContent = LettersAlreadyGuessed;
 
     if (win < 1 ){
 wins++;
 document.getElementById("score").textContent= wins;
-setup;
-    };
-  }
 
-console.log(output)
+
+  setup();
+
+
+    };
+   
+  }
