@@ -1,15 +1,19 @@
 body {
     
     text-align: center;
-    color:white;
-    background-image:url(WordGuess.jpg);
+    color:black;
+    background-image:url(doodles.png);
 }
 #box{
-    background-color: black;
+   
 }
 
 h2{
-    color: red
+    color: red;
+}
+#WGG{
+    color:rebeccapurple;
+     font-size: 300%;
 }
 #game{
     color: red;
@@ -32,5 +36,5 @@ h2{
 #topic{
    color:blue;
    font-style: italic;
-
+   font-size: 300%;
    }
